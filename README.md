@@ -189,7 +189,7 @@ halolight-api-go/
 ### 注册
 
 ```bash
-curl -X POST http://localhost:8080/api/auth/register \
+curl -X POST http://localhost:8000/api/auth/register \
   -H "Content-Type: application/json" \
   -d '{
     "email": "user@example.com",
@@ -201,7 +201,7 @@ curl -X POST http://localhost:8080/api/auth/register \
 ### 登录
 
 ```bash
-curl -X POST http://localhost:8080/api/auth/login \
+curl -X POST http://localhost:8000/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{
     "email": "user@example.com",
@@ -212,7 +212,7 @@ curl -X POST http://localhost:8080/api/auth/login \
 ### 获取用户列表（需要认证）
 
 ```bash
-curl -X GET http://localhost:8080/api/users?page=1&page_size=20 \
+curl -X GET http://localhost:8000/api/users?page=1&page_size=20 \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
@@ -221,7 +221,7 @@ curl -X GET http://localhost:8080/api/users?page=1&page_size=20 \
 | 变量名 | 说明 | 默认值 |
 |--------|------|--------|
 | `APP_ENV` | 应用环境 | `development` |
-| `APP_PORT` | 服务端口 | `8080` |
+| `APP_PORT` | 服务端口 | `8000` |
 | `JWT_SECRET` | JWT 密钥 | `change-me-in-production` |
 | `JWT_EXPIRE_MINUTES` | JWT 过期时间（分钟） | `60` |
 | `DB_HOST` | 数据库主机 | `localhost` |

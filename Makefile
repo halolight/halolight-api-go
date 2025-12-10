@@ -1,7 +1,7 @@
 .PHONY: dev build run test clean tidy lint docker-build docker-up docker-down help
 
 APP_NAME=halolight-api
-PORT ?= 8080
+PORT ?= 8000
 
 # Development
 dev:

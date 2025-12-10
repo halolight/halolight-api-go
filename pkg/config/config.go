@@ -30,7 +30,7 @@ func Load() Config {
 	expire, _ := strconv.Atoi(getEnv("JWT_EXPIRE_MINUTES", "60"))
 	return Config{
 		AppEnv:          getEnv("APP_ENV", "development"),
-		AppPort:         getEnv("APP_PORT", "8080"),
+		AppPort:         getEnv("APP_PORT", "8000"),
 		JWTSecret:       getEnv("JWT_SECRET", "change-me-in-production"),
 		JWTExpireMinute: expire,
 		DBHost:          getEnv("DB_HOST", "localhost"),

@@ -5,10 +5,10 @@ services:
     build: .
     container_name: halolight-api
     ports:
-      - "${APP_PORT:-8080}:8080"
+      - "${APP_PORT:-8000}:8000"
     environment:
       - APP_ENV=${APP_ENV:-development}
-      - APP_PORT=8080
+      - APP_PORT=8000
       - JWT_SECRET=${JWT_SECRET:-change-me-in-production}
       - JWT_EXPIRE_MINUTES=${JWT_EXPIRE_MINUTES:-60}
       - DB_HOST=db

@@ -147,7 +147,7 @@ gin.H{
 ```bash
 # 应用配置
 APP_ENV=development
-APP_PORT=8080
+APP_PORT=8000
 
 # JWT 配置
 JWT_SECRET=your-super-secret-key

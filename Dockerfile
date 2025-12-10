@@ -30,7 +30,7 @@ COPY --from=builder /app/server .
 COPY .env.example .env.example
 
 # Expose port
-EXPOSE 8080
+EXPOSE 8000
 
 # Use non-root user
 USER nonroot:nonroot
